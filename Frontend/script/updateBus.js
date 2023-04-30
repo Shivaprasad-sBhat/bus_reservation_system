@@ -14,7 +14,7 @@ function getBuses(event) {
 async function getAllBuses() {
     try {
 
-        let res = await fetch("http://localhost:8818/viewallbus", {
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/viewallbus", {
             method: "GET",
             // body:JSON.stringify(obj),
             headers: {
@@ -166,7 +166,7 @@ async function updateBus1(obj){
 
         let routeID = document.getElementById("routeID12").value
      
-        let res = await fetch(`http://localhost:8818/updatebus/${routeID}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/updatebus/${routeID}`,{
             method:"PUT",
             body:JSON.stringify(obj),
             headers:{

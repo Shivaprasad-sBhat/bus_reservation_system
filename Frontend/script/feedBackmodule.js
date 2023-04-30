@@ -5,7 +5,7 @@ async function allTicket(){
 
 
     try{
-        let res = await fetch(`http://localhost:8818/getAllFedbacks`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/getAllFedbacks`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json"

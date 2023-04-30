@@ -37,7 +37,7 @@ document.querySelector("form").addEventListener("submit",createRoute)
 async function addRouteFun(obj){
     try{
 
-        let res = await fetch("http://localhost:8818/addRoute",{
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/addRoute",{
             method:"POST",
             body:JSON.stringify(obj),
             headers:{

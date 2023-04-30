@@ -14,7 +14,7 @@ function getRoutes(event) {
 async function getAllRoutes() {
     try {
 
-        let res = await fetch("http://localhost:8818/viewAllRoute", {
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/viewAllRoute", {
             method: "GET",
             // body:JSON.stringify(obj),
             headers: {
@@ -99,7 +99,7 @@ document.querySelector("#tbody").append(tr);
 async function deleteRoute(obj){
     try{
 
-        let res = await fetch(`http://localhost:8818/deleteRoute/${obj.routeId}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/deleteRoute/${obj.routeId}`,{
             method:"DELETE",
             //body:JSON.stringify(obj),
             headers:{

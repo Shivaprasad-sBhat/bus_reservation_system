@@ -44,7 +44,7 @@ async function addBusFun(obj){
 
     let routeid = document.getElementById("routesid1").value
     console.log(routeid)
-        let res = await fetch(`http://localhost:8818/savebus/${routeid}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/savebus/${routeid}`,{
             method:"POST",
             body:JSON.stringify(obj),
             headers:{

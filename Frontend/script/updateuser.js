@@ -48,7 +48,7 @@ document.querySelector("form").addEventListener("submit",userUpdate)
 async function userUpdateFun(obj){
     try{
 
-        let res = await fetch("http://localhost:8818/updateUser",{
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/updateUser",{
             method:"PUT",
             body:JSON.stringify(obj),
             headers:{

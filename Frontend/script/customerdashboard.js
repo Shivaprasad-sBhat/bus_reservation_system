@@ -64,7 +64,7 @@ function findBuses(event){
 async function getAllBus(obj){
     try{
             //new api
-        let res = await fetch(`http://localhost:8818/viewBusByRoute/${obj.source}/${obj.destination}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/viewBusByRoute/${obj.source}/${obj.destination}`,{
             method:"GET",
             // body:JSON.stringify(obj),
             headers:{
@@ -193,7 +193,7 @@ async function bookTicket(elem,userData){
 
         try{
             console.log(elem.busId)
-            let res = await fetch(`http://localhost:8818/seatReservation/${elem.busId}/${userData.userLoginId}`,{
+            let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/seatReservation/${elem.busId}/${userData.userLoginId}`,{
                 method:"POST",
                 body:JSON.stringify(reservationObj),
                 headers:{

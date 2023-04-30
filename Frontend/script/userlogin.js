@@ -30,7 +30,7 @@ document.querySelector("form").addEventListener("submit",checkUser)
 async function login(obj){
     try{
 
-        let res = await fetch("http://localhost:8818/userlogin",{
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/userlogin",{
             method:"POST",
             body:JSON.stringify(obj),
             headers:{

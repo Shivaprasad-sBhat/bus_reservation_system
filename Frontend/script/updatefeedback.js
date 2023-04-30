@@ -33,7 +33,7 @@ async function invoke(event){
 
 
     try{
-        let res = await fetch(`http://localhost:8818/updatefeedback`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/updatefeedback`,{
             method:"PUT",
             body:JSON.stringify(feedback),
             headers:{

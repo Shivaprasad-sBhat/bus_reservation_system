@@ -14,7 +14,7 @@ function getRoutes(event) {
 async function getAllRoutes() {
     try {
 
-        let res = await fetch("http://localhost:8818/viewAllRoute", {
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/viewAllRoute", {
             method: "GET",
             // body:JSON.stringify(obj),
             headers: {
@@ -150,7 +150,7 @@ document.querySelector("#updateRoutebtn").addEventListener("click",updateRoute)
 async function upRouteFun(obj){
     try{
 
-        let res = await fetch("http://localhost:8818/updateRoute",{
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/updateRoute",{
             method:"PUT",
             body:JSON.stringify(obj),
             headers:{

@@ -7,7 +7,7 @@ async function allTicket(userdata){
 
 
     try{
-        let res = await fetch(`http://localhost:8818/viewReservations/${userdata.userLoginId}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/viewReservations/${userdata.userLoginId}`,{
             method:"GET",
             headers:{
                 "Content-Type":"application/json"
@@ -186,7 +186,7 @@ async function removes(data){
 
 
     try{
-        let res = await fetch(`http://localhost:8818/deleteReservations/${data.reservationId}/${userdata.userLoginId}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/deleteReservations/${data.reservationId}/${userdata.userLoginId}`,{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json"

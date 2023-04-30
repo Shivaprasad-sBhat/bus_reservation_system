@@ -14,7 +14,7 @@ function deleteBus(event) {
 async function deleteBuses() {
     try {
 
-        let res = await fetch("http://localhost:8818/viewallbus", {
+        let res = await fetch("https://busreservationsystem-production-ae31.up.railway.app/viewallbus", {
             method: "GET",
             // body:JSON.stringify(obj),
             headers: {
@@ -110,7 +110,7 @@ document.querySelector("#tbody").append(tr);
 async function deleteBusFun(obj){
     try{
         console.log(obj.busId)
-        let res = await fetch(`http://localhost:8818/deletebus/${obj.busId}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/deletebus/${obj.busId}`,{
             method:"DELETE",
             //body:JSON.stringify(obj),
             headers:{

@@ -35,7 +35,7 @@ async function invoke(event){
 
 
     try{
-        let res = await fetch(`http://localhost:8818/setfeddback/${userdata.userLoginId}/${reservationfdback.reservationId}`,{
+        let res = await fetch(`https://busreservationsystem-production-ae31.up.railway.app/setfeddback/${userdata.userLoginId}/${reservationfdback.reservationId}`,{
             method:"POST",
             body:JSON.stringify(feedback),
             headers:{
